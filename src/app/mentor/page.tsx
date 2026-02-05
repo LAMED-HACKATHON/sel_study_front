@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Mentor = () => {
-  return <div>Mentor</div>;
+  return (
+    <div>
+      <div>학생 리스트 페이지</div>
+    </div>
+  );
 };
 
 export default Mentor;

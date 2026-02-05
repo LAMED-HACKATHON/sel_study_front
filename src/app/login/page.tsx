@@ -1,9 +1,6 @@
 import Image from 'next/image';
 
-const Main = () => {
-  console.log('api', process.env.API_URL);
-  console.log('client', process.env.NEXT_PUBLIC_API_URL);
-
+const Login = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       메인페이지
@@ -51,4 +48,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Login;
