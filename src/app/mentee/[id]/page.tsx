@@ -1,5 +1,3 @@
-import React from 'react';
-
 const MenteePlannerDetail = ({ params }: { params: { id: string } }) => {
   console.log('params', params);
 
