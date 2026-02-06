@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { Geist_Mono } from 'next/font/google';
 import QueryProvider from '@/components/QueryProvider';
 import '@/style/globals.css';
 import localFont from 'next/font/local';
@@ -14,11 +13,6 @@ const pretendard = localFont({
   adjustFontFallback: false,
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
 export const metadata: Metadata = {
   title: '설 스터디',
   description: '고등학생을 위한 티처 추천 플랫폼',
@@ -26,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="ko" className={`${pretendard.variable} ${geistMono.variable}`}>
+    <html lang="ko" className={`${pretendard.variable}`}>
       <body className="antialiased">
         <QueryProvider>
           <Header />
