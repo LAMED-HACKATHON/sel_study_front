@@ -5,7 +5,7 @@ const Main = () => {
   console.log('client', process.env.NEXT_PUBLIC_API_URL);
 
   return (
-    <div className="flex min-h-screen flex-col bg-linear-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black">
+    <div className="flex min-h-screen flex-col bg-linear-to-b from-[#F2F7FF] to-white dark:from-gray-900 dark:to-black">
       <section className="container mx-auto px-4 py-12 pb-20 md:py-20 md:pb-32">
         <div className="flex flex-col gap-12 lg:flex-row lg:gap-16">
           <div className="lg:w-1/2">
@@ -21,11 +21,11 @@ const Main = () => {
               </div>
 
               {/* 아래: 버튼 */}
-              <div className="pt-4">
+              {/* <div className="pt-4">
                 <button className="text-md inline-flex min-h-[56px] items-center justify-center rounded-full bg-gray-900 px-8 py-2 font-bold text-white transition-colors hover:bg-gray-800 active:bg-black">
                   시작하기
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
