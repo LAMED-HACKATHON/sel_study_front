@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { RiBox3Fill } from 'react-icons/ri';
 
 const Main = () => {
   console.log('api', process.env.API_URL);
@@ -6,7 +7,7 @@ const Main = () => {
 
   return (
     <div className="flex min-h-screen flex-col bg-linear-to-b from-[#F2F7FF] to-white">
-      <section className="container mx-auto px-[16px] py-[48px] pb-[80px] md:py-[8px] md:pb-[128px]">
+      <section className="container mx-auto mt-[105px] px-[16px] py-[48px] pb-[80px] md:py-[8px] md:pb-[128px]">
         <div className="flex flex-col gap-[48px] lg:flex-row lg:gap-[64px]">
           <div className="lg:w-[50%]">
             <div className="flex h-full flex-col justify-between">
@@ -34,6 +35,48 @@ const Main = () => {
                 priority
                 unoptimized
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto w-full py-[80px] md:max-w-[1482px]">
+        <div className="px-[16px]">
+          <div className="mb-[48px] flex flex-col items-center gap-[11px] text-center md:mb-[132px]">
+            <p className="text-[22px] text-gray-500">기능</p>
+            <h2 className="text-[24px] font-bold text-gray-900 md:text-[48px]">설스터디의 핵심 기능</h2>
+            <p className="text-[14px] text-gray-600 md:text-[22px]">학생 개인의 수준과 목표에 맞춘 학습 전략</p>
+          </div>
+
+          <div className="grid grid-cols-1 justify-items-center gap-[20px] md:grid-cols-3 md:gap-[48px]">
+            <div className="w-full max-w-[388px] bg-[#9AA6B2] p-[32px] text-white">
+              <RiBox3Fill className="mb-[14px] h-[26px] w-[26px]" />
+              <h3 className="mb-[25px] text-[32px] font-semibold">수능 국영수 맞춤 코칭</h3>
+              <p className="text-[18px] leading-relaxed text-white/80">
+                멘토가 직접 설계한 커리큘럼으로
+                <br />
+                효율적인 학습 경험
+              </p>
+            </div>
+
+            <div className="w-full max-w-[388px] bg-[#9AA6B2] p-[32px] text-white">
+              <RiBox3Fill className="mb-[14px] h-[26px] w-[26px]" />
+              <h3 className="mb-[25px] text-[32px] font-semibold">멘토와 멘티 실시간 소통</h3>
+              <p className="text-[18px] leading-relaxed text-white/80">
+                즉각적인 피드백과 질문 해결로
+                <br />
+                학습 속도 가속화
+              </p>
+            </div>
+
+            <div className="w-full max-w-[388px] bg-[#9AA6B2] p-[32px] text-white">
+              <RiBox3Fill className="mb-[14px] h-[26px] w-[26px]" />
+              <h3 className="mb-[25px] text-[32px] font-semibold">진도와 성취도 관리</h3>
+              <p className="text-[18px] leading-relaxed text-white/80">
+                체계적인 추적으로 학습 진행 상황을
+                <br />
+                명확하게 파악
+              </p>
             </div>
           </div>
         </div>
