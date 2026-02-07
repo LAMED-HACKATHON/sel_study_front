@@ -15,7 +15,10 @@ const Header = () => {
           </Link>
           <nav className="hidden items-center space-x-8 md:flex">
             <div className="flex space-x-4">
-              <Link href="#" className="rounded-md border border-gray-400 bg-transparent px-6 py-1 text-gray-600 transition-all duration-200 hover:border-gray-500 hover:bg-gray-500 hover:text-white">
+              <Link
+                href="/login"
+                className="rounded-md border border-gray-400 bg-transparent px-6 py-1 text-gray-600 transition-all duration-200 hover:border-gray-500 hover:bg-gray-500 hover:text-white"
+              >
                 로그인
               </Link>
             </div>
