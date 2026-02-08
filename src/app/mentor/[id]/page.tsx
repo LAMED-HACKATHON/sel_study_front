@@ -3,9 +3,11 @@ const MentorPlanner = async ({ params }: { params: Promise<{ id: string }> }) =>
   const { id } = await params;
 
   return (
-    <div className="flex min-h-screen flex-col bg-linear-to-b from-[#F2F7FF] to-white">
-      <PlannerPage menteeId={id} />
-    </div>
+    <main className="flex min-h-screen flex-col items-center bg-linear-to-b from-[#F2F7FF] to-white">
+      <div className="max-w-[96%]">
+        <PlannerPage menteeId={id} />
+      </div>
+    </main>
   );
 };
 
