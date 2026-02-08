@@ -4,7 +4,7 @@ import { BsCardChecklist, BsChat } from 'react-icons/bs';
 
 const MenteeProfilePanel = () => {
   return (
-    <div className="w-[284px] border border-green-600">
+    <div className="w-[284px]">
       <div className="mt-[48px]">
         <h2 className="mb-[18px] text-[40px] font-bold">담당 멘티</h2>
         <p className="text-[20px] font-light">현재 담당하고 있는 멘티 목록입니다</p>
@@ -29,7 +29,7 @@ const MenteeProfilePanel = () => {
           </div>
 
           {/* 왼쪽 밑 메뉴 */}
-          <div className="mt-[70px] flex flex-col items-start gap-[40px] border">
+          <div className="mt-[70px] flex flex-col items-start gap-[40px]">
             <button className="flex cursor-pointer items-center text-[27px] font-medium">
               <BsCardChecklist size={24} className="mr-[6px]" />할 일 등록
             </button>
