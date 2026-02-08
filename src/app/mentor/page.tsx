@@ -1,7 +1,10 @@
 import { CiSearch } from 'react-icons/ci';
 import { MenteeCard } from '@/app/mentor/ui/MenteeCard';
+import { getMenteeList } from '@/service/userService';
 
-const Mentor = () => {
+const Mentor = async () => {
+  const res = await getMenteeList();
+  console.log('멘티 리스트 출력: ', res);
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-b from-[#F2F7FF] to-white">
       <section className="container mx-auto mt-[100px] mb-[41px] px-4 text-center">
