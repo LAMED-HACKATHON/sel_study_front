@@ -1,7 +1,24 @@
+'use client';
 import { CiSearch } from 'react-icons/ci';
 import { MenteeCard } from '@/app/mentor/ui/MenteeCard';
+import { getMenteeList } from '@/service/userService';
+import { useEffect } from 'react';
 
 const Mentor = () => {
+  // const res = await getMenteeList();
+  // console.log('멘티 리스트 출력: ', res);
+  useEffect(() => {
+    const fetchMentees = async () => {
+      try {
+        const res = await getMenteeList();
+        console.log('멘티 리스트 출력: ', res);
+      } catch (error) {
+        console.error('멘티 리스트 불러오기 실패: ', error);
+      }
+    };
+    fetchMentees();
+  }, []);
+
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-b from-[#F2F7FF] to-white">
       <section className="container mx-auto mt-[100px] mb-[41px] px-4 text-center">

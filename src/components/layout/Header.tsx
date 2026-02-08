@@ -1,10 +1,21 @@
 'use client';
-import { useState } from 'react';
+
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useAuthStore } from '@/store/authStore';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+
+  const isLoggedIn = useAuthStore((state) => state.isLoggedIn);
+  const clearUser = useAuthStore((state) => state.clearUser);
+
+  // 로그아웃 핸들러
+  const handleLogout = () => {
+    clearUser();
+    router.push('/');
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur-md">
@@ -15,12 +26,21 @@ const Header = () => {
           </Link>
           <nav className="hidden items-center space-x-8 md:flex">
             <div className="flex space-x-4">
-              <Link
-                href="/login"
-                className="rounded-md border border-gray-400 bg-transparent px-6 py-1 text-gray-600 transition-all duration-200 hover:border-gray-500 hover:bg-gray-500 hover:text-white"
-              >
-                로그인
-              </Link>
+              {isLoggedIn ? (
+                <button
+                  onClick={handleLogout}
+                  className="cursor-pointer rounded-md border border-gray-400 bg-transparent px-6 py-1 text-gray-600 transition-all duration-200 hover:border-gray-500 hover:bg-gray-500 hover:text-white"
+                >
+                  로그아웃
+                </button>
+              ) : (
+                <Link
+                  href="/login"
+                  className="rounded-md border border-gray-400 bg-transparent px-6 py-1 text-gray-600 transition-all duration-200 hover:border-gray-500 hover:bg-gray-500 hover:text-white"
+                >
+                  로그인
+                </Link>
+              )}
             </div>
           </nav>
         </div>
