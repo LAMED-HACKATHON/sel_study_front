@@ -19,12 +19,12 @@ const MenteeProfilePanel = () => {
           </div>
 
           {/* 프로필 정보 */}
-          <h3 className="text-center text-[32px] font-bold text-gray-900">홍길동</h3>
+          <h3 className="text-center text-[32px] font-bold text-gray-900">오대현</h3>
           <div className="text-center">
             <div className="flex items-center justify-center gap-2">
               <span className="text-[16px] font-medium text-gray-600">1학년</span>
               <RxDividerVertical className="self-center text-gray-300" />
-              <span className="text-[16px] text-gray-600">학교 이름</span>
+              <span className="text-[16px] text-gray-600">학교</span>
             </div>
           </div>
 

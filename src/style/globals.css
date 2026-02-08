@@ -122,7 +122,8 @@
     @apply bg-background text-foreground;
   }
 }
-
-.fc .fc-toolbar {
+.rdp-month_caption,
+.rdp-months .rdp-button_next,
+.rdp-months .rdp-button_previous {
   background: #98a3b5;
 }

@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur-md">
-      <div className="container mx-auto px-4 py-7">
+      <div className="mx-auto max-w-[1760px] py-7">
         <div className="flex items-center justify-between">
           <Link href="/" aria-label="홈" className="flex items-center">
             <Image src="/logo/logo.png" alt="로고" width={120} height={40} className="h-auto w-32" />
