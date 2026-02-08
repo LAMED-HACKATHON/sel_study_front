@@ -10,7 +10,7 @@ const MenteeProfilePanel = () => {
         <p className="text-[20px] font-light">현재 담당하고 있는 멘티 목록입니다</p>
       </div>
       <div className="mt-[51px]">
-        <div className="flex inline-flex flex-col gap-[14px]">
+        <div className="flex flex-col gap-[14px]">
           {/* 프로필 이미지 */}
           <div className="flex-shrink-0">
             <div className="relative mx-auto h-[115px] w-[115px] overflow-hidden rounded-full">

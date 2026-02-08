@@ -1,4 +1,4 @@
-import MenteeTodoItem from '@/app/mentor/[id]/components/MenteeTodoItem';
+import MenteeTodoItem from '@/app/mentor/[id]/ui/MenteeTodoItem';
 
 const MenteeTodoPanel = () => {
   return (
