@@ -16,9 +16,9 @@ export const MenteeCard = () => {
         <div className="space-y-2 text-center">
           <h3 className="text-[32px] font-bold text-gray-900">홍길동</h3>
           <div className="flex items-center justify-center gap-2">
-            <span className="text-[14px] font-medium text-gray-600">1학년</span>
+            <span className="text-[16px] font-medium text-gray-600">1학년</span>
             <RxDividerVertical className="self-center text-gray-300" />
-            <span className="text-[14px] text-gray-600">서울 고등학교</span>
+            <span className="text-[16px] text-gray-600">서울 고등학교</span>
           </div>
         </div>
       </div>

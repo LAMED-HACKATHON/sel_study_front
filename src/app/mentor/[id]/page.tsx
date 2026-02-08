@@ -1,14 +1,11 @@
-import Image from 'next/image';
-
-const MentorPlanner = ({ params }: { params: { id: string } }) => {
-  console.log('params', params);
+import PlannerPage from '@/app/mentor/[id]/PlannerPage';
+const MentorPlanner = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const { id } = await params;
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between bg-white px-16 py-32 sm:items-start dark:bg-black">
-        <Image className="dark:invert" src="/next.svg" alt="Next.js logo" width={100} height={20} priority />
-        학생 플래너 페이지
-      </main>
+    <div className="flex min-h-screen flex-col bg-linear-to-b from-[#F2F7FF] to-white">
+      <div>멘토 플래너 할일 상세 페이지 - {id}</div>
+      <PlannerPage menteeId={id} />
     </div>
   );
 };
