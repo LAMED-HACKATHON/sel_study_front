@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import MenteeProfilePanel from '@/app/mentor/[id]/components/MenteeProfilePanel';
-import MenteeTodoPanel from '@/app/mentor/[id]/components/MenteeTodoPanel';
-import MenteeTodoCalendar from '@/app/mentor/[id]/components/MenteeTodoCalendar';
+import MenteeProfilePanel from '@/app/mentor/[id]/ui/MenteeProfilePanel';
+import MenteeTodoPanel from '@/app/mentor/[id]/ui/MenteeTodoPanel';
+import MenteeTodoCalendar from '@/app/mentor/[id]/ui/MenteeTodoCalendar';
 
 const PlannerForm = ({ menteeId }: { menteeId: string }) => {
   return (

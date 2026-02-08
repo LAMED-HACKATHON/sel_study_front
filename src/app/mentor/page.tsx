@@ -1,5 +1,5 @@
 import { CiSearch } from 'react-icons/ci';
-import { MenteeCard } from './components/MenteeCard';
+import { MenteeCard } from '@/app/mentor/ui/MenteeCard';
 
 const Mentor = () => {
   return (
